@@ -6,6 +6,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J Park</title>
+    <style>
+        .perspective { perspective: 1000px; }
+        .transform-style-preserve-3d { transform-style: preserve-3d; }
+        .backface-hidden { backface-visibility: hidden; }
+        .rotate-y-180 { transform: rotateY(180deg); }
+    </style>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -142,32 +149,53 @@
             </div>
         </section>
 
-        <!-- Projects -->
         <section id="projects">
             <h2 class="text-2xl font-semibold mb-8">Projects</h2>
-            <div class="flex flex-col md:flex-row md:justify-center md:space-x-8 space-y-8 md:space-y-0">
-                <div class="bg-white rounded-lg overflow-hidden shadow w-full md:w-80">
-                    <img src="assets/toronto_coin_karaoke.jpeg" alt="Toronto Coin Karaoke Platform" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium">Toronto Coin Karaoke Platform</h3>
-                        <p class="mt-2 text-gray-600 text-sm">
-                            The Coin Karaoke is a newly trending Karaoke system in Asia. The traditional karaoke system restricts customers to pay full hours, usually minimum of one hour, regardless if they want to leave early. However, the Coin Karaoke will solve this problem as it allows customers to choose their own time to come and enjoy karaoke until they want. 
-                            Instead of paying for restricted time for karaoke, customers will be using RFID card to charge, track and use their credits to operate our system. Customers will be paying per song by tapping their card to a machine. With this technology, customers could leave any time they want without time restriction, but enjoy karaoke for however many songs they want to sing.
-                        </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Flip Card 1 -->
+                <label class="block perspective cursor-pointer">
+                    <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 z-10" />
+                    <div
+                        class="relative w-full h-80 md:h-96 transition-transform duration-700 transform-style-preserve-3d peer-checked:rotate-y-180">
+                        <!-- Front -->
+                        <div class="absolute inset-0 backface-hidden bg-white rounded-lg shadow overflow-hidden">
+                            <img src="assets/toronto_coin_karaoke.jpeg" alt="Toronto Coin Karaoke Platform" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium">Toronto Coin Karaoke Platform</h3>
+                                <p class="mt-2 text-gray-600 text-sm">Short description…</p>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white rounded-lg shadow p-6 overflow-auto">
+                            <h3 class="text-lg font-medium">Details</h3>
+                            <p class="mt-2 text-gray-600 text-sm">The Coin Karaoke is a newly trending Karaoke system in Asia. The traditional karaoke system restricts customers to pay full hours, usually minimum of one hour, regardless if they want to leave early. However, the Coin Karaoke will solve this problem as it allows customers to choose their own time to come and enjoy karaoke until they want. 
+                            Instead of paying for restricted time for karaoke, customers will be using RFID card to charge, track and use their credits to operate our system. Customers will be paying per song by tapping their card to a machine. With this technology, customers could leave any time they want without time restriction, but enjoy karaoke for however many songs they want to sing.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow w-full md:w-80">
-                    <img src="assets/project2.png" alt="Social Media App" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium">Coming up...</h3>
-                        <p class="mt-2 text-gray-600 text-sm">
-                            Something cool is coming up soon...
-                        </p>
+                </label>
+                <!-- Flip Card 2 -->
+                <label class="block perspective cursor-pointer">
+                    <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 z-10" />
+                    <div
+                        class="relative w-full h-80 md:h-96 transition-transform duration-700 transform-style-preserve-3d peer-checked:rotate-y-180">
+                        <!-- Front -->
+                        <div class="absolute inset-0 backface-hidden bg-white rounded-lg shadow overflow-hidden">
+                            <img src="assets/project2.png" alt="Project Two" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium">Project Two</h3>
+                                <p class="mt-2 text-gray-600 text-sm">Short description…</p>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white rounded-lg shadow p-6 overflow-auto">
+                            <h3 class="text-lg font-medium">Project Two Details</h3>
+                            <p class="mt-2 text-gray-600 text-sm">detail</p>
+                        </div>
                     </div>
-                </div>
+                </label>
             </div>
         </section>
-
+        
         <!-- Education -->
         <section id="education" class="container mx-auto px-6 py-12">
             <h2 class="text-2xl font-semibold mb-8">Education</h2>
