@@ -28,7 +28,7 @@ description:           >
   J Park personal website
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               Software Engineer
 
 # A list of keywords for your blog
 keywords:              []
@@ -41,8 +41,8 @@ logo:                  /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Ji Ho Park
+  email:               bjh418@hotmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
