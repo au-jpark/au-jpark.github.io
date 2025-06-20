@@ -1,3 +1,6 @@
+<!-- Connected Vehicle Software (CVS) -->
+ <!-- CVS architects, desgins, develops, delivers, and maintains connected vehicle software solutions in the car and the cloud for all business units for Ford Motor Company -->
+
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -6,19 +9,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+<body style="font-family:'Space Grotesk',system-ui,-apple-system,sans-serif" class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
     <!-- Header -->
     <header class="bg-white shadow sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <span class="text-xl font-semibold">J's Room</span>
+                <span class="text-2xl font-semibold">J's Room</span>
             </div>
-            <ul class="flex items-center space-x-6 text-gray-700">
+            <ul class="flex items-center space-x-6 text-gray-700 text-xl">
                 <li><a href="#about" class="hover:text-blue-600">About</a></li>
                 <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
                 <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
@@ -37,19 +46,19 @@
     <main class="container mx-auto px-6 py-12 space-y-20">
 
         <!-- About -->
-        <section id="about" class="text-center">
-            <img src="assets/profile.jpg" alt="J Park" class="w-32 h-32 rounded-full mx-auto object-cover">
-            <h1 class="mt-4 text-3xl font-bold">J Park</h1>
-            <h2 class="mt-1 text-xl text-gray-600">Software Engineer</h2>
-            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        <section id="about" class="text-center bg-gradient-to-r from-sky-500 to-indigo-500 text-white py-12 rounded-lg">
+            <img src="assets/profile.jpg" alt="J Park" class="w-64 h-64 rounded-full mx-auto object-cover border-4 border-white" />
+            <h1 class="mt-4 text-6xl font-bold">J Park</h1>
+            <h2 class="mt-1 text-2xl">Software Engineer</h2>
+            <p class="mt-4 max-w-6xl mx-auto text-lg">
                 Passionate software engineer with a focus on building scalable and efficient applications. Experienced
-                in full-stack development, cloud technologies, and agile methodologies.
+                in full-stack development, cloud technologies, and agile methodologies. I'm a software engineer with a strong background in building robust microservices in Java with Spring framework. I've worked in enterprises and startups on anything from cloud security platform to video chat mobile apps. I am an architect and creator of Toronto's first automated Karaoke management system. Currently, I'm a software engineer at Autonomic, building bi-directional communication platform between cloud and motor vehicles. I love building things. Let's chat.
             </p>
         </section>
 
         <!-- Experience -->
         <section id="experience" class="container mx-auto px-6 py-12">
-        <h2 class="mb-8 text-2xl font-semibold">Experience</h2>
+        <h2 class="mb-8 text-4xl font-semibold">Experience</h2>
         <div class="relative w-full">
           <!-- Vertical line center -->
           <div class="absolute top-0 left-8 h-full w-px bg-gray-300"></div>
@@ -58,22 +67,21 @@
             <li class="relative">
               <img src="assets/ford_logo.png" alt="Innovate" class="absolute top-0 left-8 h-12 w-12 -translate-x-1/2 transform rounded-full bg-white p-1" />
               <div class="ml-20">
-                <h3 class="text-lg font-medium">Cloud Software Engineer at Ford Motor Company</h3>
-                <p class="mt-1 text-gray-500">2023 - Present</p>
-                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600">
+                <h3 class="text-2xl font-medium">Cloud Software Engineer at Ford Motor Company</h3>
+                <p class="mt-1 text-gray-500 text-xl">2023 - Present</p>
+                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600 text-lg">
                   <li>{detail1}</li>
                   <li>{detail2}</li>
                 </ul>
               </div>
             </li>
-
             <!-- Item 2 -->
             <li class="relative">
               <img src="assets/autonomic_logo.png" alt="Innovate" class="absolute top-0 left-8 h-12 w-12 -translate-x-1/2 transform rounded-full bg-white p-1" />
               <div class="ml-20">
-                <h3 class="text-lg font-medium">Software Engineer at Autonomic Inc.</h3>
-                <p class="mt-1 text-gray-500">2018 - 2023</p>
-                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600">
+                <h3 class="text-2xl font-medium">Software Engineer at Autonomic Inc.</h3>
+                <p class="mt-1 text-gray-500 text-xl">2018 - 2023</p>
+                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600 text-lg">
                   <li>{detail1}</li>
                   <li>{detail2}</li>
                 </ul>
@@ -83,11 +91,11 @@
             <li class="relative">
               <img src="assets/helpful_logo.png" alt="Innovate" class="absolute top-0 left-8 h-12 w-12 -translate-x-1/2 transform rounded-full bg-white p-1" />
               <div class="ml-20">
-                <h3 class="text-lg font-medium">Agile Engineer at Helpful Inc.</h3>
-                <p class="mt-1 text-gray-500">2018</p>
-                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600">
-                  <li>As a part of Core team, managed real-time high priority customer requests and re-designed the entire backend system of the product by splitting over-complicated services into several sole-purpose services</li>
-                  <li>Championed the front-end and backend development of the Admin Dashboard, a tool to allow sysadmins and HR to manage their company’s directory and individual employee information</li>
+                <h3 class="text-2xl font-medium">Agile Engineer at Helpful Inc.</h3>
+                <p class="mt-1 text-gray-500 text-xl">2018</p>
+                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600 text-lg">
+                  <li>Managed real-time high priority customer requests and re-designed the entire backend system of the product by splitting over-complicated services into several sole-purpose services</li>
+                  <li>Championed the front-end and backend development of the Admin Dashboard, a tool to allow system admins and HR to manage their company’s directory and individual employee information</li>
                   <li>Participated in the company’s pilot machine learning project – specifically calculating the Elis-IT weight matrix from PageRank vectors using Wikipedia’s adjacency matrix to identify objects in text, mapping them to articles via Elastic Search then suppressing them with a LinkedIn dataset to identify skills</li>
                   <li>In a pair, developed a core proprietary microservice used to facilitate and maintain the flashcards components of the app used for teaching users, testing them and learning from their behavioral signals</li>
                   <li>Fully developed and introduced a profile status functionality as a self-driven project during innovation week</li>
@@ -98,9 +106,9 @@
             <li class="relative">
               <img src="assets/td_logo.png" alt="Innovate" class="absolute top-0 left-8 h-12 w-12 -translate-x-1/2 transform rounded-full bg-white p-1" />
               <div class="ml-20">
-                <h3 class="text-lg font-medium">Java Developer at TD Securities</h3>
-                <p class="mt-1 text-gray-500">2016</p>
-                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600">
+                <h3 class="text-2xl font-medium">Java Developer at TD Securities</h3>
+                <p class="mt-1 text-gray-500 text-xl">2016</p>
+                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600 text-lg">
                   <li>Enhanced and retained the TD Calypso system, an integrated suite of cross-asset trading and risk management solutions used by hundreds of business analysts, through Java development</li>
                   <li>Independently developed and designed an internal website used hourly by the entire Calypso development, quality assurance and business analyst team across TD internationally for developing, testing, and utilizing the TD Calypso trading system with modern web technologies such as AngularJS</li>
                   <li>Led the migration of TD’s internal development environment by restructuring CVS to GIT</li>
@@ -112,9 +120,9 @@
             <li class="relative">
               <img src="assets/blue_coat_systems_logo.png" alt="Innovate" class="absolute top-0 left-8 h-12 w-12 -translate-x-1/2 transform rounded-full bg-white p-1" />
               <div class="ml-20">
-                <h3 class="text-lg font-medium">Cloud Security Service Developer at Blue Coat Systems</h3>
-                <p class="mt-1 text-gray-500">2015</p>
-                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600">
+                <h3 class="text-2xl font-medium">Cloud Security Service Developer at Blue Coat Systems</h3>
+                <p class="mt-1 text-gray-500 text-xl">2015</p>
+                <ul class="mt-4 max-w-fit list-inside list-disc space-y-2 text-gray-600 text-lg">
                   <li>Developed and maintained Blue Coat’s exclusive cloud security control portal with Java in a pair programming, agile development environment</li>
                   <li>Enhanced portal security through input validation using JavaScript with ExtJS and Java</li>
                   <li>Developed Siesta automated regression tests for the accuracy in quality assurance</li>
@@ -126,49 +134,51 @@
       </section>
         
         <section id="projects" class="container mx-auto px-6 py-12">
-            <h2 class="mb-8 text-2xl font-semibold">Projects</h2>
+            <h2 class="mb-8 text-4xl font-semibold">Projects</h2>
             <div class="space-y-12">
             <!-- Project 1 -->
             <div class="flex flex-col items-center md:flex-row">
                 <div class="md:w-1/2">
-                <h3 class="text-xl font-medium">E-commerce Platform</h3>
-                <p class="mt-2 text-gray-600">Developed a full-featured e-commerce platform with user authentication, product management, and payment integration. This project involved designing and implementing a scalable database schema, creating RESTful APIs for front-end interaction, and integrating third-party payment gateways. Key technologies used include React, Node.js, Express, and PostgreSQL.</p>
+                <h3 class="text-2xl font-medium">Toronto Coin Karaoke Platform</h3>
+                <p class="mt-2 text-gray-600 text-lg">
+                    The traditional karaoke system restricts customers to pay full hours, usually minimum of one hour, regardless if they want to leave early. However, the Coin Karaoke will solve this problem as it allows customers to choose their own time to come and enjoy karaoke until they want. Instead of paying for restricted time for karaoke, customers will be using RFID card to charge, track and use their credits to operate our system. Customers will be paying per song by tapping their card to a machine. With this technology, customers could leave any time they want without time restriction, but enjoy karaoke for however many songs they want to sing.
+                </p>
                 </div>
                 <div class="mt-6 md:mt-0 md:w-1/2 md:pl-8">
-                <img src="assets/ecommerce_platform.png" alt="E-commerce Platform Screenshot" class="h-48 w-full rounded-lg object-cover shadow-lg" />
+                    <img src="assets/toronto_coin_karaoke.jpeg" alt="E-commerce Platform Screenshot" class="h-48 w-full rounded-lg object-cover shadow-lg" />
                 </div>
             </div>
             <!-- Project 2 -->
             <div class="flex flex-col items-center md:flex-row">
                 <div class="md:w-1/2">
-                <h3 class="text-xl font-medium">Social Media App</h3>
-                <p class="mt-2 text-gray-600">Built a social media application with user profiles, posts, and real-time updates. The application features user authentication, the ability to create and interact with posts, and real-time updates using WebSockets. Technologies used include React, Node.js, Express, MongoDB, and Socket.IO.</p>
+                <h3 class="text-2xl font-medium">Coming soon...</h3>
+                <p class="mt-2 text-gray-600 text-lg">Details coming soon...</p>
                 </div>
                 <div class="mt-6 md:mt-0 md:w-1/2 md:pl-8">
-                <img src="assets/social_media_app.png" alt="Social Media App Screenshot" class="h-48 w-full rounded-lg object-cover shadow-lg" />
+                    <img src="assets/social_media_app.png" alt="screenshot" class="h-48 w-full rounded-lg object-cover shadow-lg" />
                 </div>
             </div>
         </section>
 
         <!-- Education -->
         <section id="education" class="container mx-auto px-6 py-12">
-            <h2 class="mb-8 text-2xl font-semibold">Education</h2>
+            <h2 class="mb-8 text-4xl font-semibold">Education</h2>
             <div class="flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6">
                 <div class="md:flex-shrink-0">
-                <img src="assets/university_of_waterloo_logo.png" alt="University of Waterloo Logo" class="h-12 w-12 object-contain" />
+                    <img src="assets/university_of_waterloo_logo.png" alt="University of Waterloo Logo" class="h-24 w-24 object-contain" />
                 </div>
                 <div>
-                <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Computer Science, University of Waterloo</h3>
-                <p class="text-gray-500 mt-1">2013 - 2018</p>
-                <p class="mt-4 text-gray-600">Honours Computer Science/Software Engineering Option - Co-operative Program</p>
+                    <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Computer Science, University of Waterloo</h3>
+                    <p class="text-gray-500 mt-1 text-xl">2013 - 2018</p>
+                    <p class="mt-4 text-gray-600 text-lg">Honours Computer Science/Software Engineering Option - Co-operative Program</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact" class="text-center">
-            <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-            <p class="text-gray-600 max-w-lg mx-auto">
+            <h2 class="text-4xl font-semibold mb-4">Contact</h2>
+            <p class="text-gray-600 max-w-lg mx-auto text-xl">
                 Feel free to connect with me on:
             </p>
             <div class="flex justify-center space-x-6 mt-6">
